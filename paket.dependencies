@@ -2,3 +2,4 @@ source https://nuget.org/api/v2
 
 nuget fsunit.xunit
 nuget unquote
+nuget http.fs
