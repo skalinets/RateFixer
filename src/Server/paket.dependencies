@@ -1,5 +1,8 @@
 source https://nuget.org/api/v2
 
+nuget Microsoft.AspNet.WebApi.Owin
+nuget Nancy
+nuget Newtonsoft.Json
 nuget fsunit.xunit
 nuget unquote
 nuget http.fs
