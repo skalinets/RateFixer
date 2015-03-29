@@ -1,0 +1,1 @@
+angular.module("templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("main/main.html","<h3>List of Awesome Things</h3><ul><li ng-repeat=\"thing in awesomeThings\">{{ thing }}</li></ul>");}]);
