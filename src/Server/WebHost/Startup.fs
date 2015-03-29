@@ -4,6 +4,7 @@ open Owin
 open Microsoft.Owin
 open Microsoft.Owin.Host
 open System.Web.Http
+open Newtonsoft.Json.Serialization
 
 type Startup() =
 
@@ -15,6 +16,8 @@ type Startup() =
           defaults = RouteParameter.Optional) 
         |> ignore
       
+      cfg.Formatters.JsonFormatter.SerializerSettings.ContractResolver <- CamelCasePropertyNamesContractResolver()
+
       app
         .UseWebApi(cfg)
         .MapSignalR()
