@@ -3,7 +3,7 @@
   "main": "app.js",
   "version": "0.0.0",
   "authors": [
-    "jessie <jessie@apollo.com.ph>"
+    "Serhiy Kalinets <kalinets@gmail.com>"
   ],
   "license": "MIT",
   "private": true,
@@ -17,6 +17,9 @@
   "devDependencies": {
     "angular": "~1.2.14",
     "angular-route": "~1.2.14"
+  },
+  "dependencies": {
+    "angular-ui": "~0.4.0",
+    "bootstrap": "~3.3.4"
   }
 }
-

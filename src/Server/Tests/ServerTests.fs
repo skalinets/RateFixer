@@ -4,6 +4,7 @@ open Xunit
 open Swensen.Unquote
 open Server
 
+
 [<Fact>]
 let ``check get rate for known date`` () =
   let fromC = "SEK"
