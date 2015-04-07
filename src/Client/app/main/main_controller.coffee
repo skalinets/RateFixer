@@ -15,3 +15,6 @@ angular.module 'client-main',['ngRoute']
       'Less',
       'Jade'
     ]
+
+    $scope.newReport = ->
+      $scope.awesomeThings = ['clicked', 'non-clicked']

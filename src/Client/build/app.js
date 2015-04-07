@@ -16,5 +16,8 @@ angular.module('client-main', ['ngRoute']).config(function($routeProvider) {
     controller: 'MainCtrl'
   });
 }).controller('MainCtrl', function($scope) {
-  return $scope.awesomeThings = ['HTML5 Boilerplate', 'AngularJS', 'Karma', 'Coffeescript', 'Less', 'Jade'];
+  $scope.awesomeThings = ['HTML5 Boilerplate', 'AngularJS', 'Karma', 'Coffeescript', 'Less', 'Jade'];
+  return $scope.newReport = function() {
+    return $scope.awesomeThings = ['clicked', 'non-clicked'];
+  };
 });
